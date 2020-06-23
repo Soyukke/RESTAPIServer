@@ -1,13 +1,11 @@
 ## Build
 
 ```bash
-docker build .
+docker build . -t apitest --no-cache
 ```
 
-## RUN
+## Run
 
 ```bash
-$ docker run 0344c144b478
-port: 8081
-Hello World
+$ docker run -p 8081:8081 apitest
 ```

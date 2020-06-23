@@ -12,4 +12,4 @@ ENV PORT "8081"
 # Copy application
 COPY ./Application /Application
 
-CMD ["/usr/local/julia/bin/julia", "main.jl"]
+CMD ["/usr/local/julia/bin/julia", "--project=.", "main.jl"]
