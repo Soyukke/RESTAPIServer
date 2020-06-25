@@ -8,7 +8,7 @@ COPY ./Application/Project.toml /Application
 COPY ./Application/Manifest.toml /Application
 RUN julia --project=. -e "using Pkg; Pkg.instantiate(); Pkg.precompile();"
 
-ENV PORT "8081"
+ENV PORT "8080"
 # Copy application
 COPY ./Application /Application
 

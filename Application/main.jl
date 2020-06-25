@@ -5,8 +5,9 @@ using JSON2
 """
 Routingを行う場合
 """
-const localhost = "127.0.0.1"
+const localhost = "0.0.0.0"
 const port = parse(Int, ENV["PORT"])
+println("ポート番号: ", port)
 const headers = ["Content-Type" => "application/json"]
 
 struct TestStruct
